@@ -1,0 +1,3 @@
+This is a tedt file
+i will check hoew git works in this file
+

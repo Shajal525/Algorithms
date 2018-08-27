@@ -1,0 +1,60 @@
+# First step is update
+sudo apt update && sudo apt upgrade
+
+
+# Then Open Software & Updaete and go to Other software tab and
+# check Canonical Partner
+
+# For Batary this is must
+sudo apt install tlp tlp-rdw
+sudo tlp start
+
+# For C/C++ Programming I can try. This will install GCC,G++,MAKE
+sudo apt install build-essential
+# Or try install them menually
+sudo apt install gcc g++
+
+# For QT-Creator if build-essential not help I have to type
+sudo apt install make
+sudo apt install qt5-qmake
+# If this won't help try
+sudo apt install qt5-default
+
+# Then for tweak the look
+sudo apt install gnome-tweak-tool
+# I can go to gnome extention website and enable diffrent extensions like user-themes
+
+#Then For multimedia i need to install
+sudo apt install ubuntu-restricted-extras
+# For SMPlayer
+sudo add-apt-repository ppa:rvm/smplayer-qt4
+sudo apt update
+sudo apt install smplayer smtube smplayer-themes
+
+# For XDM i need to try google and download XDM zip or tar file and install
+
+# If i need to install Java JDK or JRE we can install it using
+sudo apt install default-jdk default-jre
+
+
+# For my Wifi Adapter. D-link 131
+
+sudo apt-get install git
+git clone https://github.com/Mange/rtl8192eu-linux-driver.git
+cd rtl8192eu-linux-driver
+make
+sudo make install
+sudo modprobe 8192eu
+
+# Each time we upgrade linux we need to do this
+
+cd rtl8192eu-linux-driver
+make clean
+make
+sudo make install
+sudo modprobe 8192eu
+
+# We need to use this comment to stop laptops internal wifi card.
+sudo ifconfig wlo1 down
+
+

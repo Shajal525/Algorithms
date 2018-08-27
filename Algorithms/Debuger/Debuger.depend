@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1508600261 source:d:\study\algorithm\my_everything\debuger\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+	<cmath>
+	<cstring>
+	<string>
+	<climits>
+	<vector>
+	<queue>
+	<stack>
+	<set>
+	<map>
+	<bitset>
+
